@@ -1,0 +1,63 @@
+
+```html
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Promo Shopee & Berita Bola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      max-width: 400px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+    p {
+      color: #374151;
+      margin: 15px 0;
+    }
+    .loading {
+      margin-top: 20px;
+      font-size: .95rem;
+      color: #6b7280;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      // URL tujuan
+      var beritaUrl = "https://www.bolasport.com/read/314304299/20-pemain-timnas-indonesia-sudah-tiba-di-arab-saudi-terbaru-maarten-paes";
+      var shopeeUrl = "https://s.shopee.co.id/8V061GrxUt";
+
+      // Manipulasi history agar tombol back menuju berita
+      history.replaceState(null, "", beritaUrl);
+
+      // Delay sebentar untuk user experience
+      setTimeout(function(){
+        window.location.href = shopeeUrl;
+      }, 2000);
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>Segera Alihkan...</h1>
+    <p>Kami sedang mengarahkan Anda ke <strong>Promo Shopee</strong> spesial.</p>
+    <p>Setelah itu, Anda bisa kembali untuk membaca <em>berita terbaru Timnas Indonesia</em>.</p>
+    <div class="loading">Mohon tunggu sebentar...</div>
+  </div>
+</body>
+</html>
+```
