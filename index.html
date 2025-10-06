@@ -1,21 +1,67 @@
+```html
 <!doctype html>
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <title>Redirect Shopee + Berita</title>
+  <title>Promo Shopee & Berita Timnas Indonesia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- paksa redirect langsung ke Shopee -->
-  <meta http-equiv="refresh" content="0;url=https://s.shopee.co.id/8V061GrxUt">
-
-  <script>
-    // tetap pasang link berita ke history sebelum redirect
-    window.onload = function() {
-      history.replaceState(null, "", "https://www.bolasport.com/read/314304299/20-pemain-timnas-indonesia-sudah-tiba-di-arab-saudi-terbaru-maarten-paes");
-    };
-  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffedd5, #fff);
+      text-align: center;
+      padding: 50px 20px;
+      color: #111827;
+    }
+    .card {
+      background: white;
+      padding: 35px 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      max-width: 440px;
+      margin: auto;
+      animation: pop 0.7s ease;
+    }
+    @keyframes pop {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      font-size: 1.6rem;
+      color: #dc2626;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.05rem;
+      margin: 15px 0 25px;
+    }
+    a {
+      display: block;
+      margin: 15px 0;
+      padding: 16px;
+      background: linear-gradient(90deg,#f97316,#ea580c);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 12px rgba(249,115,22,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(249,115,22,0.5);
+    }
+  </style>
 </head>
 <body>
-  <p>Mengalihkan ke Shopee...</p>
+  <div class="card">
+    <h1>😱 Jangan Lewatkan!</h1>
+    <p><strong>Promo Shopee GILA-GILAAN</strong> & kabar panas terbaru <strong>Timnas Indonesia</strong> yang baru saja tiba di Arab Saudi! Klik sekarang sebelum ketinggalan! 🔥</p>
+    
+    <a href="https://s.shopee.co.id/8V061GrxUt" target="_blank" rel="noopener noreferrer">🎁 Lihat Promo Rahasia Shopee</a>
+    <a href="https://www.bolasport.com/read/314304299/20-pemain-timnas-indonesia-sudah-tiba-di-arab-saudi-terbaru-maarten-paes" target="_blank" rel="noopener noreferrer">⚽ Bocoran Berita Panas Timnas Indonesia</a>
+  </div>
 </body>
 </html>
+```
